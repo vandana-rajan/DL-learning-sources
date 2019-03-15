@@ -22,3 +22,14 @@ set_random_seed(7)
 
 Also, initialize weights of conv layers without randomness. Example, use 'glorot_uniform' which uses fan_in and fan_out as factors. 
 
+In PyTorch, use
+
+torch.backends.cudnn.deterministic = True
+
+torch.backends.cudnn.benchmark = False
+
+torch.manual_seed(999)
+
+4. Use ProgramCreek for example codes. Example https://www.programcreek.com/python/example/107694/torch.nn.LSTM 
+
+
