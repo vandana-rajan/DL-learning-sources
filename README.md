@@ -32,4 +32,6 @@ torch.manual_seed(999)
 
 4. Use ProgramCreek for example codes. Example https://www.programcreek.com/python/example/107694/torch.nn.LSTM 
 
+5. For RNN-LSTM learning use https://www.youtube.com/playlist?list=PL1w8k37X_6L_s4ncq-swTBvKDWnRSrinI
+
 
