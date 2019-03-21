@@ -34,4 +34,6 @@ torch.manual_seed(999)
 
 5. For RNN-LSTM learning use https://www.youtube.com/playlist?list=PL1w8k37X_6L_s4ncq-swTBvKDWnRSrinI
 
+6. An intuitive explanation of cross-entropy loss https://towardsdatascience.com/understanding-binary-cross-entropy-log-loss-a-visual-explanation-a3ac6025181a
+
 
