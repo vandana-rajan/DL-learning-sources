@@ -32,8 +32,9 @@ torch.manual_seed(999)
 
 4. Use ProgramCreek for example codes. Example https://www.programcreek.com/python/example/107694/torch.nn.LSTM 
 
-5. For RNN-LSTM learning use https://www.youtube.com/playlist?list=PL1w8k37X_6L_s4ncq-swTBvKDWnRSrinI
-
+5. For RNN-LSTM learning use Andrew Ng's lectures at https://www.youtube.com/playlist?list=PL1w8k37X_6L_s4ncq-swTBvKDWnRSrinI
+   and Christopher Olah's blog http://colah.github.io/posts/2015-08-Understanding-LSTMs/
+   
 6. An intuitive explanation of cross-entropy loss https://towardsdatascience.com/understanding-binary-cross-entropy-log-loss-a-visual-explanation-a3ac6025181a
 
 
