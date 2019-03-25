@@ -37,4 +37,6 @@ torch.manual_seed(999)
    
 6. An intuitive explanation of cross-entropy loss https://towardsdatascience.com/understanding-binary-cross-entropy-log-loss-a-visual-explanation-a3ac6025181a
 
+7. L0,L1,L2 and L-infinity norms: https://medium.com/@montjoile/l0-norm-l1-norm-l2-norm-l-infinity-norm-7a7d18a4f40c
+
 
