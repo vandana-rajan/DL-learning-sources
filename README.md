@@ -41,4 +41,6 @@ torch.manual_seed(999)
 
 8. A bit of history about phonetically balanced sentences: https://gizmodo.com/the-harvard-sentences-secretly-shaped-the-development-1689793568 [Not exactly related to DL but audio engineering.]
 
+9. Bias-Variance Trade Off: https://en.wikipedia.org/wiki/Bias%E2%80%93variance_tradeoff
+
 
