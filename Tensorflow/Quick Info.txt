@@ -102,6 +102,29 @@ Tensor("Placeholder:0", dtype=float32)
 ... 
 [ 4.  8. 12.]
 
+How to debug a TF program? For one, we have the eager execution mode. But we need to know how to debug in lazy evaluation mode.
+To get the shape of a tensor, we can use 'get_shape' method.
+
+>> a = data[:,0:2]
+>> a.get_shape()
+
+Manipulate the shape of tensors using various commands like 'tf.reshape','tf.expand_dims','tf.slice','tf.squeeze'.
+Use 'tf.cast' to cast from one data type to another.
+
+To debug full blown programmes, we have 3 methods
+
+1. tf.Print
+
+2. tfdbg
+
+3. tensorboard
+
+Also, change logging level to INFO to get more information about errors. 
+
+>> tf.logging.set_verbosity(tf.logging.INFO)
+
+
+
 
 
 
