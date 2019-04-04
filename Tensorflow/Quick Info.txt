@@ -61,6 +61,34 @@ Example,
 
 This will create a directory called summaries which contain an event file. Now we need 'tensorboard' to visualize this graph.
 
+Tensors can be stacked on top of each other using 'tf.stack' command. They can also be sliced by specifying the rows and columns.
+
+Examples:
+
+>> x[:,1]
+
+>> x[1, 0:2]
+
+Tensors can be reshaped using 'tf.reshape' function. 
+
+>> x = tf.constant([[3,5,7],[4,6,8]])
+
+>> y = tf.reshape(x,[3,2])
+
+>>> with tf.Session() as sess:
+...     sess.run(y)
+... 
+array([[3, 5],
+       [7, 4],
+       [6, 8]], dtype=int32)
+
+Note here that TF goes through x by taking elements from each row.
+
+So far we have seen how to create and use constants in TF. Now lets look at variables, whose values change as the programme evolves.
+
+
+
+
 
 
 
