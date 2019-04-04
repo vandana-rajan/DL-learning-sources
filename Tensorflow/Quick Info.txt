@@ -135,6 +135,11 @@ We can use 'tf.feature_column' API to define features that are to input to the m
 Model checkpoints - They allow us to continue training, resume on failure and predict from trained model.
 Restarting from check point is the default behavior of estimators.
 
+We can load smaller datasets into memory very easily. But what about bigger datasets?
+Larger datasets can be split and put inside multiple files that can be loaded progressively. Since we are training in batches, one mini-batch is all we need at a time in memory.
+
+'tf.data.Dataset' can be used for input to 'tf.estimator'.
+
 
 
 
