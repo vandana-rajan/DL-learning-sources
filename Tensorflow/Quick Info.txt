@@ -1,0 +1,34 @@
+# Some quick info about TF I learnt from coursera course on TF [https://www.coursera.org/learn/intro-tensorflow]
+
+Tensors are one step above matrices. So you have a scalar, then a vector, then a matrix and then next comes tensors like 3D tensor, 4D tensor etc.
+
+Tensorflow functions using Directed Acyclic Graphs (DAGs). 
+
+The nodes of this graph are operations like add, multiply or softmax etc and the edges are tensors. 
+Computations are performed by the flow of tensors over this graph and hence the name TensorFlow.
+
+TF performs lazy computations. For example
+
+>> a = tf.constant([1,2,3])
+>> b = tf.constant([4,5,6])
+>> c = tf.add(a,b)
+
+This does not produce the value of c immediately. Rather, it will create a tensor for c.
+
+>>> c
+<tf.Tensor 'Add:0' shape=(3,) dtype=int32>
+
+In order to find the actual value of c, we need to create a TF session and run that session.
+
+>> with tf.Session() as sess:
+>>      sess.run(c)
+
+This will give the output of c
+
+>> array([4, 6, 8], dtype=int32)
+
+Now for development purposes where we need to examine the values of tensors immediately, we can use 'eager evaluation'. Note that
+this should be used only for development purposes and not for production code.
+
+
+
