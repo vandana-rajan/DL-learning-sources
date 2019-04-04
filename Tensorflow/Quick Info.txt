@@ -27,6 +27,8 @@ This will give the output of c
 
 >> array([4, 6, 8], dtype=int32)
 
+Instead of sess.run(c), c.eval() would also give the same result. 
+
 Now for development purposes where we need to examine the values of tensors immediately, we can use 'eager evaluation'. Note that
 this should be used only for development purposes and not for production code.
 
