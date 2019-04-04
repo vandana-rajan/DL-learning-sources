@@ -49,6 +49,19 @@ Example:
 >>> c
 <tf.Tensor: id=2, shape=(3,), dtype=int32, numpy=array([4, 6, 8], dtype=int32)>
 
+Now that we know how to create a TF graph, we need to visualize the graph as well. We can use 'tf.summary.FileWriter' for this.
+
+Example,
+
+>> with tf.Session() as sess:
+
+>>      with tf.summary.FileWriter('summaries',sess.graph) as writer:
+
+>>            c1 = sess.run(c)
+
+This will create a directory called summaries which contain an event file. Now we need 'tensorboard' to visualize this graph.
+
+
 
 
 
