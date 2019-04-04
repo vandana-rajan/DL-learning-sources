@@ -30,5 +30,23 @@ This will give the output of c
 Now for development purposes where we need to examine the values of tensors immediately, we can use 'eager evaluation'. Note that
 this should be used only for development purposes and not for production code.
 
+Example:
+
+>>> import tensorflow as tf
+
+>>> from tensorflow.contrib.eager.python import tfe
+
+>>> tfe.enable_eager_execution()
+
+>>> a = tf.constant([1,2,3])
+
+>>> b = tf.constant([3,4,5])
+
+>>> c = tf.add(a,b)
+
+>>> c
+<tf.Tensor: id=2, shape=(3,), dtype=int32, numpy=array([4, 6, 8], dtype=int32)>
+
+
 
 
