@@ -86,6 +86,23 @@ Note here that TF goes through x by taking elements from each row.
 
 So far we have seen how to create and use constants in TF. Now lets look at variables, whose values change as the programme evolves.
 
+We use 'tf.get_variable' to create a variable in TF. When creating the variable, we can specify the scope of that variable using 
+'tf.variable_scope'. While creating a variable, we have to specify how to initialise that variable using 'tf.truncated_normal_initializer()'. Inside the session, remember to initialize all the variables using 'tf.global_variables_initializer()'.
+
+We can use placeholders to specify values during session. Use 'tf.placeholder' for that.
+
+Example:
+
+>>> a = tf.placeholder("float",None)
+>>> b = a*4
+>>> print a
+Tensor("Placeholder:0", dtype=float32)
+>>> with tf.Session() as sess:
+...     print(sess.run(b, feed_dict={a:[1,2,3]}))
+... 
+[ 4.  8. 12.]
+
+
 
 
 
