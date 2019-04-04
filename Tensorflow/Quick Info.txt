@@ -123,6 +123,9 @@ Also, change logging level to INFO to get more information about errors.
 
 >> tf.logging.set_verbosity(tf.logging.INFO)
 
+There are different levels of verbosity - debug, info, warn, error and fatal. We get more verbose output with debug and least with fatal.
+
+We can use tensorflow debugger to create breakpoints and step through the code.
 
 
 
