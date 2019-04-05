@@ -1,0 +1,29 @@
+# how to use check point files
+While downloading some pre-trained models, they might have stored it as checkpoints. 
+So we get a folder with files that are named similar to the following.
+
+model.ckpt-0.data-00000-of-00001
+model.ckpt-0.index
+model.ckpt-0.meta
+
+First thing we might want would be to \bf{visualize this trained network graph}. For that, do the following inside the python command line.
+
+>> g = tf.Graph() 
+>> with g.as_default() as g: 
+...     tf.train.import_meta_graph('./model.ckpt-0.meta') 
+... 
+
+<tensorflow.python.training.saver.Saver object at 0x7f160b9ff5d0>
+>>> with tf.Session(graph=g) as sess: 
+...     file_writer = tf.summary.FileWriter(logdir='logs/my-model', graph=g) 
+
+Now we can see a folder 'logs/my-model' that contains a tensorflow event file.
+Now, exit out of python command line and type the following in terminal
+
+$ tensorboard --logdir='./logs/my-model'
+
+A visualization opens up in the browser if we click the created link.
+
+
+
+
