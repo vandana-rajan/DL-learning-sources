@@ -1,4 +1,4 @@
-# how to use check point files
+# USING CHECKPOINT FILES
 While downloading some pre-trained models, they might have stored it as checkpoints. 
 So we get a folder with files that are named similar to the following.
 
