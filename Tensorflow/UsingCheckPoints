@@ -6,7 +6,9 @@ model.ckpt-0.data-00000-of-00001
 model.ckpt-0.index
 model.ckpt-0.meta
 
-First thing we might want would be to **visualize this trained network graph**. For that, do the following inside the python command line.
+################ VISUALIZING THE CHECKPOINT GRAPH ########################################################
+
+First thing we might want would be to visualize this trained network graph. For that, do the following inside the python command line.
 
 >> g = tf.Graph() 
 >> with g.as_default() as g: 
@@ -23,6 +25,27 @@ Now, exit out of python command line and type the following in terminal
 $ tensorboard --logdir='./logs/my-model'
 
 A visualization opens up in the browser if we click the created link.
+
+############################ GET LIST OF VARIABLE NAMES ####################################
+
+We might need to get the names of the variables in the network. This is useful to freeze the model.
+
+>>> from tensorflow.contrib.framework.python.framework import checkpoint_utils
+>>> vars_in_check = checkpoint_utils.list_variables('model.ckpt-0') 
+
+This will print out the list of variable names. Note that we need to give the exact name 'model.ckpt-0'. 'model.ckpt' won't work.
+
+############################ RESTORING THE MODEL ################################
+
+We might need to restore the saved checkpoint model. For that, do the following.
+
+>>> with tf.Session() as sess:
+...     saver = tf.train.import_meta_graph('./model.ckpt-0.meta')
+...     saver.restore(sess, 'model.ckpt-0')
+... 
+
+This will restore parameters from model.ckpt-0
+
 
 
 
