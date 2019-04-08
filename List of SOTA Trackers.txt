@@ -1,0 +1,9 @@
+# List of links for SOTA trackers
+
+1. Siamese Network based tracker: http://www.robots.ox.ac.uk/~luca/siamese-fc.html
+
+2. http://cvlab.postech.ac.kr/research/mdnet/
+
+3. https://sites.google.com/site/yuankiqi/hdt/
+
+4. http://www.cvl.isy.liu.se/research/objrec/visualtracking/conttrack/index.html
