@@ -140,6 +140,8 @@ Larger datasets can be split and put inside multiple files that can be loaded pr
 
 'tf.data.Dataset' can be used for input to 'tf.estimator'.
 
+Tensorflow uses queues and threads to parallelize and speed up operations. More details can be found here.
+https://adventuresinmachinelearning.com/introduction-tensorflow-queuing/
 
 
 
