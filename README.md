@@ -46,3 +46,4 @@ torch.manual_seed(999)
 9. Bias-Variance Trade Off: https://en.wikipedia.org/wiki/Bias%E2%80%93variance_tradeoff
 
 10. Variational Auto Encoder: https://towardsdatascience.com/understanding-variational-autoencoders-vaes-f70510919f73
+11. nice blog on quantization : https://medium.com/@luis.vasquez.work.log/zero-point-quantization-how-do-we-get-those-formulas-4155b51a60d6
